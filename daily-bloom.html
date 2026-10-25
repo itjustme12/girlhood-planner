@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlhood Planner | Bible Verses</title>
+    <link rel="stylesheet" href="coquette-style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>Girlhood Planner ♡</h1>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <nav class="navigation">
+        <a href="blush-dashboard.html">Dashboard</a>
+        <a href="petal-form.html">Task Form</a>
+        <a href="daily-bloom.html" class="active-link">Bible Verses</a>
+    </nav>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">FAITH OVER FEAR</p>
+            <h2>Grow in Grace 🌷</h2>
+            <p>A little reminder of God's love to carry you through the day.</p>
+        </section>
+
+        <section class="quote-card">
+            <div class="flower">୨୧</div>
+            <p class="eyebrow">BIBLE VERSE OF THE DAY</p>
+
+            <h2 id="quoteText">
+                I can do all things through Christ which strengtheneth me.
+            </h2>
+
+            <p id="verseReference">Philippians 4:13 (KJV)</p>
+
+            <button class="main-button" onclick="changeQuote()">
+                Another Bible Verse ♡
+            </button>
+        </section>
+
+        <section class="panel goal-panel">
+            <h2>Today's Goal ♡</h2>
+            <p>What is one thing you want to accomplish today?</p>
+
+            <form id="goalForm">
+                <textarea id="todayGoal"
+                          rows="4"
+                          maxlength="500"
+                          placeholder="Today, with God's guidance, I want to..."></textarea>
+
+                <button type="submit" class="main-button">
+                    Save My Goal ♡
+                </button>
+
+                <p id="goalMessage" class="message"></p>
+            </form>
+        </section>
+
+        <section class="affirmation-card">
+            <h2>A Prayerful Reminder ♡</h2>
+            <p>God is with me in every season of my life.</p>
+            <p>I will do my best, trust His timing, and keep growing in faith.</p>
+        </section>
+
+        <div class="center-button">
+            <a href="blush-dashboard.html" class="main-button link-button">
+                Back to Dashboard
+            </a>
+        </div>
+    </main>
+
+    <script src="pink-ribbon.js"></script>
+</body>
+</html>

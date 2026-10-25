@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlhood Planner | Login</title>
+    <link rel="stylesheet" href="coquette-style.css">
+</head>
+<body class="login-page">
+
+    <div class="login-card">
+        <div class="flower">୨୧</div>
+        <h1>Girlhood Planner</h1>
+        <p class="subtitle">A little plan for a lovely day ♡</p>
+
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username"
+                   placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password"
+                   placeholder="Enter your password" required>
+
+            <p id="loginMessage" class="message"></p>
+
+            <button type="submit" class="main-button">
+                Login ♡
+            </button>
+        </form>
+
+        <p class="small-note">Demo account: student / 1234</p>
+    </div>
+
+    <script>
+        var loginForm = document.getElementById("loginForm");
+
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var message = document.getElementById("loginMessage");
+
+            if (username === "student" && password === "1234") {
+                localStorage.setItem("girlhoodLoggedIn", "true");
+                window.location.href = "blush-dashboard.html";
+            } else {
+                message.textContent = "Incorrect username or password.";
+            }
+        });
+    </script>
+
+</body>
+</html>

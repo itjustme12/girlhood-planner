@@ -1,0 +1,408 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff7fb;
+    color: #573747;
+}
+
+h1, h2 {
+    color: #a64270;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #b84d80;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8d315e;
+}
+
+.top-header {
+    background: #f8d9e8;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.top-header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-bottom: 1px solid #f3d4e3;
+}
+
+.navigation a {
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.navigation a:hover,
+.navigation .active-link {
+    background: #f8d9e8;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+.welcome {
+    padding: 25px 0;
+}
+
+.welcome h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.eyebrow {
+    color: #c16b96;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.stat-card,
+.panel,
+.motivation-card,
+.quote-card,
+.affirmation-card {
+    background: white;
+    border: 1px solid #f3d4e3;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 5px 18px rgba(166, 66, 112, 0.06);
+}
+
+.stat-card p {
+    color: #946a7e;
+    margin-bottom: 8px;
+}
+
+.stat-card h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    margin-bottom: 0;
+}
+
+.main-button,
+.logout-button,
+.cancel-button {
+    display: inline-block;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: inherit;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.main-button {
+    background: #d979a5;
+    color: white;
+}
+
+.main-button:hover {
+    background: #bd5d89;
+    color: white;
+}
+
+.logout-button {
+    background: white;
+    color: #a64270;
+}
+
+.logout-button:hover {
+    background: #fff0f6;
+}
+
+.cancel-button {
+    background: #f7e9f0;
+    color: #a64270;
+    margin-left: 8px;
+}
+
+.link-button {
+    white-space: nowrap;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #f3e1ea;
+}
+
+th {
+    background: #fff1f7;
+    color: #a64270;
+    font-size: 13px;
+}
+
+td {
+    font-size: 14px;
+}
+
+.action-button {
+    border: none;
+    background: #f8e3ed;
+    color: #94436a;
+    border-radius: 15px;
+    padding: 7px 10px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.action-button:hover {
+    background: #efc5da;
+}
+
+.empty-message {
+    text-align: center;
+    color: #a77d91;
+    padding-top: 20px;
+}
+
+.motivation-card {
+    margin-top: 25px;
+    background: #fdeaf3;
+}
+
+.motivation-card h2 {
+    margin-bottom: 10px;
+}
+
+.text-link {
+    font-weight: bold;
+}
+
+.form-container {
+    max-width: 650px;
+}
+
+.panel form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 18px 0 8px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #e8bfd2;
+    border-radius: 10px;
+    background: #fffafd;
+    color: #573747;
+    font: inherit;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d979a5;
+    box-shadow: 0 0 0 3px #fce6f0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.message {
+    color: #a64270;
+    font-size: 13px;
+    margin: 12px 0;
+}
+
+.small-note {
+    color: #946a7e;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #fff7fb, #f8d9e8);
+}
+
+.login-card {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px;
+    border-radius: 22px;
+    border: 1px solid #f3d4e3;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(166, 66, 112, 0.1);
+}
+
+.login-card h1 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #946a7e;
+    margin-bottom: 25px;
+}
+
+.flower {
+    color: #d979a5;
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.login-card label {
+    text-align: left;
+}
+
+.login-card .main-button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.quote-card,
+.affirmation-card {
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 35px 25px;
+}
+
+.quote-card {
+    background: #fdeaf3;
+}
+
+.quote-card h2 {
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 18px auto 15px;
+    max-width: 650px;
+}
+
+#verseReference {
+    color: #946a7e;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.goal-panel {
+    margin-bottom: 25px;
+}
+
+.goal-panel .main-button {
+    margin-top: 15px;
+}
+
+.affirmation-card p {
+    margin-bottom: 8px;
+}
+
+.center-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+@media (max-width: 650px) {
+    .top-header {
+        padding: 16px 5%;
+    }
+
+    .top-header h1 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 92%;
+        margin: 20px auto;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .welcome h2 {
+        font-size: 25px;
+    }
+
+    .panel,
+    .stat-card,
+    .motivation-card {
+        padding: 18px;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+}

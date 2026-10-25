@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlhood Planner | Task Form</title>
+    <link rel="stylesheet" href="coquette-style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>Girlhood Planner ♡</h1>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <nav class="navigation">
+        <a href="blush-dashboard.html">Dashboard</a>
+        <a href="petal-form.html" class="active-link">Task Form</a>
+        <a href="daily-bloom.html">Daily Motivation</a>
+    </nav>
+
+    <main class="container form-container">
+        <section class="panel">
+            <p class="eyebrow">PLAN IT OUT</p>
+            <h2 id="formTitle">Add a New Task ♡</h2>
+            <p>Write down what you need to accomplish.</p>
+
+            <form id="taskForm">
+                <label for="taskName">Task Name</label>
+                <input type="text" id="taskName"
+                       placeholder="Example: Finish Java activity" required>
+
+                <label for="dueDate">Due Date</label>
+                <input type="date" id="dueDate" required>
+
+                <label for="priority">Priority</label>
+                <select id="priority" required>
+                    <option value="">Choose priority</option>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+
+                <label for="taskStatus">Status</label>
+                <select id="taskStatus" required>
+                    <option value="Pending">Pending</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <p id="formMessage" class="message"></p>
+
+                <button type="submit" class="main-button" id="saveButton">
+                    Save Task ♡
+                </button>
+                <a href="blush-dashboard.html" class="cancel-button">
+                    Cancel
+                </a>
+            </form>
+        </section>
+    </main>
+
+    <script src="pink-ribbon.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girlhood Planner | Dashboard</title>
+    <link rel="stylesheet" href="coquette-style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>Girlhood Planner ♡</h1>
+        <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+
+    <nav class="navigation">
+        <a href="blush-dashboard.html" class="active-link">Dashboard</a>
+        <a href="petal-form.html">Task Form</a>
+        <a href="daily-bloom.html">Daily Motivation</a>
+    </nav>
+
+    <main class="container">
+        <section class="welcome">
+            <p class="eyebrow">YOUR LITTLE SPACE</p>
+            <h2>Welcome back, lovely!</h2>
+            <p>Small steps every day make a big difference.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Tasks</p>
+                <h2 id="totalTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Pending</p>
+                <h2 id="pendingTasks">0</h2>
+            </div>
+            <div class="stat-card">
+                <p>Completed</p>
+                <h2 id="completedTasks">0</h2>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <h2>My Tasks</h2>
+                    <p>Keep track of your school responsibilities.</p>
+                </div>
+                <a href="petal-form.html" class="main-button link-button">
+                    + Add Task
+                </a>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="taskTable"></tbody>
+                </table>
+            </div>
+
+            <p id="emptyMessage" class="empty-message">
+                No tasks yet. Add your first task to get started ♡
+            </p>
+        </section>
+
+        <section class="motivation-card">
+            <h2>A gentle reminder ♡</h2>
+            <p>You don't have to do everything at once. Just start somewhere.</p>
+            <a href="daily-bloom.html" class="text-link">
+                Visit Daily Motivation →
+            </a>
+        </section>
+    </main>
+
+    <script src="pink-ribbon.js"></script>
+</body>
+</html>
